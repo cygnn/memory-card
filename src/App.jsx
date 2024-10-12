@@ -35,7 +35,6 @@ function App() {
     return(word.charAt(0).toUpperCase() + word.slice(1))
   }
 
-  console.log(picked)
   function handleClick(name){
     if(picked.some(item => item.name === name)){
       gameLost()
@@ -50,17 +49,14 @@ function App() {
   }
 
   function gameWin(){
-    console.log('you have won')
     setIsModalOpen(true)
   }
   function gameLost(){
-    console.log('it exists')
       setPicked([])
       handleBestScore()
       setScore(0)
   }
   function continueGame(name){
-    console.log('continue')
     setPicked([...picked, {name: name}])
     const scoreCopy = score
     setScore(scoreCopy + 1)

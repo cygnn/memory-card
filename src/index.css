@@ -74,25 +74,26 @@ button:focus-visible {
   gap: 2rem;
 }
 
-.card{
+.card {
   border: 1px solid black;
   border-radius: 4px;
   width: 8rem;
   cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: white; 
+  text-align: center;
+  padding: 0.5rem; 
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
 }
 
 .img{
   display: flex;
   justify-content: center;
-}
-
-.modal{
-  background-image: url('./assets/images/Ash_Ketchum_World_Champion_Screenshot_2.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 75rem;
-  height: 40rem;
 }
 
 .modal-overlay {
